@@ -8,6 +8,8 @@ var Car = function(num, header, text) {
     $("#carousel-buttons").append('<div class="carousel-button" id="carousel-button'+this.num+'"><div class="carousel-button-graphics"></div></div>');
   };
   var that = this;
+  this.image= new Image(175,50);
+  this.image.src = this.img;
   setTimeout(function() {that.init();}, 100);
 }
 
