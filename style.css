@@ -213,8 +213,7 @@ body, html {
   vertical-align: middle;
   position: relative;
   left: 71.15vw;
-  top: 12vh;
-  transform: translateY(-50%);
+  top: 10%;
 }
 
 .testimony {
