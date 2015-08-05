@@ -6,7 +6,9 @@
   <link type="text/css" rel="stylesheet" href="style.css"/>
   <script language="javascript" type="text/javascript" src="jquery/jquery.js"></script>
   <script language="javascript" type="text/javascript" src="jquery/jqueryui.js"></script>
+  <script language="javascript" type="text/javascript" src="jquery/jquery-mousewheel.js"></script>
   <script language="javascript" type="text/javascript" src="ui.js"></script>
+  <script language="javascript" type="text/javascript" src="gallery.js"></script>
   <script language="javascript" type="text/javascript" src="carousel.js"></script>
 </head>
 <body>
@@ -36,10 +38,22 @@
     <div id="content-outer-outer">
       <div id="top-header" style="background-image: url('photos/general/4.png')">
         <h1 id="header-h1">gallery</h1>
+        <div class="hr hr-header"></div>
       </div>
       <div id="content-outer">
-        <div class="hr hr-full hr-margin-top"></div>
-        <div id="footer-outer">
+        <div id="gallery-outer">
+          <div id="gallery-top">
+          </div>
+          <div id="gallery-bottom">
+            <div id="gallery-bottom-blurred">
+            </div>
+            <div id="gallery-bottom-mask">
+            </div>
+            <div id="gallery-bottom-img">
+          </div>
+        </div>
+        <!-- <div class="hr hr-full"></div> -->
+        <div id="footer-outer" style="margin-left: -2.5vw">
           <table>
             <tr>
               <td>
