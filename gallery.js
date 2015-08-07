@@ -18,8 +18,9 @@ for(i = 0; i < amtOfSlides; i++) {
 
 $(document).ready(function() {
   for(i = 0; i < amtOfSlides; i++) {
-    preloading[i] = new Image(175,50);
-    preloading[i].src = "photos/gallery/"+i+".png";
+    // preloading -- removed because it takes forever :(
+    // preloading[i] = new Image(175,50);
+    // preloading[i].src = "photos/gallery/"+i+".png";
     $("#gallery-top").append('<div class="gal-prev" id="gal-prev'+i+'" style="background-image: url(\'photos/gallery-thumbnails/'+i+'.png\')"><div class="gal-prev-overlay"></div></div>')
   }
   setPhoto = function(num) {

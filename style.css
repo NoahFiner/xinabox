@@ -169,6 +169,10 @@ body, html {
   color: #4CB4C3;
 }
 
+.dropdown-outer a:active {
+  border-left: 10px solid #FFF;
+}
+
 #content-outer-outer {
   width: 100vw;
   margin-top: 75px;
@@ -186,6 +190,7 @@ body, html {
 }
 
 #header-h1 {
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
   text-align: center;
   line-height: 300px;
   vertical-align: middle;
@@ -252,8 +257,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .testimony {
-  border: 2px solid #4CB4C3;
-  background-color: #0F2A2E;
+  border: 2px solid #ADADAD;
+  background-color: #333;
   border-radius: 10px;
   line-height: 100%;
   min-height: 150px;
@@ -315,15 +320,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   border-style: solid;
   border-width: 2px;
   -webkit-border-image:
-    -webkit-gradient(linear, 0 0, 0 100%, from(#4CB4C3), to(rgba(76, 180, 195, 0))) 1 100%;
+    -webkit-gradient(linear, 0 0, 0 100%, from(#adadad), to(rgba(173, 173, 173, 0))) 1 100%;
   -webkit-border-image:
-    -webkit-linear-gradient(#4CB4C3, rgba(76, 180, 195, 0)) 1 100%;
+    -webkit-linear-gradient(#adadad, rgba(173, 173, 173, 0)) 1 100%;
   -moz-border-image:
-    -moz-linear-gradient(#4CB4C3, rgba(76, 180, 195, 0)) 1 100%;
+    -moz-linear-gradient(#adadad, rgba(173, 173, 173, 0)) 1 100%;
   -o-border-image:
-    -o-linear-gradient(#4CB4C3, rgba(76, 180, 195, 0)) 1 100%;
+    -o-linear-gradient(#adadad, rgba(173, 173, 173, 0)) 1 100%;
   border-image:
-    linear-gradient(to bottom, #4CB4C3, rgba(76, 180, 195, 0)) 1 100%;
+    linear-gradient(to bottom, #adadad, rgba(173, 173, 173, 0)) 1 100%;
 }
 
 .paragraph-text {
@@ -333,8 +338,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   margin-right: auto;
 }
 
+.important {
+  font-weight: 900;
+  color: #85CBD6;
+}
+
 #content-outer h1 {
-  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  font-family: "helvetica", sans-serif;
   font-weight: 100;
   color: #FFF;
   text-align: center;
@@ -408,7 +418,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   height: 2px !important;
   left: 0;
   right: 0;
-  background-color: #4CB4C3;
+  background-color: #ADADAD;
+}
+
+.hr-blue, .hr-header {
+  background-color: #4CB4C3 !important;
 }
 
 .hr-header {
@@ -417,6 +431,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 
 .hr-margin-top {
   margin-top: 150px;
+}
+
+.hr-margin-top-less {
+  margin-top: 50px;
 }
 
 .hr-full {
