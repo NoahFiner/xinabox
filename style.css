@@ -999,7 +999,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   width: 100%;
   filter: blur(50px);
   -webkit-filter: blur(50px);
-  overflow-y: hidden;
+  overflow: hidden;
   position: absolute;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
