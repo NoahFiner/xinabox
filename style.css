@@ -433,6 +433,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   margin-top: 150px;
 }
 
+.hr-margin-bottom {
+  margin-bottom: 25px !important;
+}
+
 .hr-margin-top-less {
   margin-top: 50px;
 }
@@ -490,6 +494,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 }
 
 #footer-outer {
+  clear: both;
   position: relative;
   background-color: #0A1C1F;
   width: 100vw;
@@ -639,4 +644,233 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   width: 95% !important;
   opacity: 0.5;
   background-color: #000;
+}
+
+
+/*games*/
+
+
+#content-left-outer {
+  height: 55vh;
+  width: 20vw;
+  margin-left: -21vw;
+  position: fixed;
+  float: left;
+  display: inline-block;
+  border-right: 2px solid #4CB4C3;
+  top: 20%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  z-index:439857298;
+}
+
+#content-left-outer.shown {
+  margin-left: 0vw;
+}
+
+#content-left-upper {
+  width: 100%;
+  height: 10vh;
+  background-color: #333;
+  margin-bottom: 100px;
+  white-space: nowrap;
+}
+
+#content-right-outer {
+  clear: both;
+  height: auto;
+  width: 100vw;
+  /*margin-right: 2.5vw;*/
+  position: relative;
+  float: right;
+  display: inline-block;
+}
+
+.game-prev, .game-prev-upper {
+  display: block;
+  width: 100%;
+  height: 10vh;
+  margin: 0;
+  cursor: pointer;
+  background-position-y: 0px;
+  background-position-x: 50%;
+  background-size: 200% auto;
+}
+
+.game-prev-upper {
+  display: inline-block;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  margin-left: -0.175vw;
+  margin-right: -0.175vw;
+  white-space: nowrap;
+  background-position-y: 50%;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+}
+
+#game-prev-outer {
+  width: 100%;
+  height: auto;
+  margin-top: 2.5vh;
+  box-shadow: 0 0 20px 5px #000000,
+}
+
+#hg-prev, #hg-prev-upper {
+  background-image: url('photos/games/hg.png');
+}
+#factions-prev, #factions-prev-upper {
+  background-image: url('photos/games/factions.png');
+}
+#plots-prev, #plots-prev-upper {
+  background-image: url('photos/games/plots.png');
+}
+#prison-prev, #prison-prev-upper {
+  background-image: url('photos/games/prison.png');
+}
+#boxcraft-prev, #boxcraft-prev-upper {
+  background-image: url('photos/games/boxcraft.png');
+}
+
+.game-prev h1, .game-prev-upper h1 {
+  margin: 0;
+  font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+  font-weight: 100;
+  font-size: 2.5vw !important;
+  text-align: left !important;
+  line-height: 10vh;
+  vertical-align: middle;
+  border-left: 0px solid #4CB4C3;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+}
+
+.game-prev-upper h1 {
+  font-size: 3vw !important;
+  text-align: center !important;
+}
+
+.game-prev:hover h1, .game-prev.selected h1 {
+  border-left: 10px solid #4CB4C3;
+  color: #4CB4C3 !important;
+  background-color: rgba(76, 180, 195, 0.2);
+  text-shadow: 0 0 2px #000;
+}
+
+.game-prev-upper:hover h1 {
+  color: #4CB4C3 !important;
+  background-color: rgba(76, 180, 195, 0.2);
+}
+
+.game-prev-upper:hover {
+  background-size: 150%;
+}
+
+.game-outer {
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#hg {
+  background-image: url('photos/games/hg.png');
+}
+#factions {
+  background-image: url('photos/games/factions.png');
+}
+#plots {
+  background-image: url('photos/games/plots.png');
+}
+#prison {
+  background-image: url('photos/games/prison.png');
+}
+#boxcraft {
+  background-image: url('photos/games/boxcraft.png');
+}
+
+.game-inner {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,1f1f1f+85&amp;0+34,1+95 */
+  background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(12,12,12,0) 34%, rgba(31,31,31,0.84) 85%, rgba(31,31,31,1) 95%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(34%,rgba(12,12,12,0)), color-stop(85%,rgba(31,31,31,0.84)), color-stop(95%,rgba(31,31,31,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(12,12,12,0) 34%,rgba(31,31,31,0.84) 85%,rgba(31,31,31,1) 95%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(12,12,12,0) 34%,rgba(31,31,31,0.84) 85%,rgba(31,31,31,1) 95%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(12,12,12,0) 34%,rgba(31,31,31,0.84) 85%,rgba(31,31,31,1) 95%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(12,12,12,0) 34%,rgba(31,31,31,0.84) 85%,rgba(31,31,31,1) 95%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#1f1f1f',GradientType=1 ); /* IE6-9 */
+
+}
+
+.game-inner * {
+  text-align: right !important;
+  width: 50%;
+  float: right;
+  position: relative;
+  display: block;
+  clear: both;
+  margin-right: 2vw;
+}
+
+.game-h1 {
+  font-weight: 900 !important;
+  font-size: 5vw;
+  white-space: nowrap;
+  width: 100%;
+  margin-right: 2vw;
+}
+
+.game-hr {
+  background-color: #4CB4C3;
+}
+
+.game-hr-mini {
+  background-color: #4CB4C3 !important;
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.ranks {
+  font-size: 2vw !important;
+  white-space: nowrap;
+  text-align: left !important;
+}
+
+.game-desc {
+  font-size: 1.5vw !important;
+}
+
+.vip {
+  font-weight: 900;
+  color: #00FF00;
+  width: auto;
+  float: left;
+}
+
+.mvp {
+  font-weight: 900;
+  color: #6600CC;
+  width: auto;
+  float: left;
+}
+
+.gold {
+  font-weight: 900;
+  color: #FF9933;
+  width: auto;
+  float: left;
+}
+
+.vip::before, .mvp::before, .gold::before {
+  content: "\25FC";
+  font-weight: 100 !important;
 }
