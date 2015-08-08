@@ -99,6 +99,7 @@ $(document).ready(function() {
     $(".quote").html("<i>"+player.quote+"</i>");
     $(".bio").html(player.bio);
     $(".player-img").attr("src", ""+player.photo+"");
+    $('#right-background-inner').css("background-image", "url('"+player.photo+"')");
     $(".roles").css("color", player.color);
     $("#right-background").css("background-color", player.color);
   }

@@ -39,8 +39,21 @@
         <h1 id="header-h1">staff</h1>
         <div class="hr hr-header"></div>
       </div>
+      <style>
+      #warning-message { display: none; }
+      @media only screen and (orientation:portrait){
+          #content-outer { display:none; }
+          #warning-message { display:block; }
+      }
+      @media only screen and (orientation:landscape){
+          #warning-message { display:none; }
+      }
+      </style>
+      <div id="warning-message">
+        <p>This page can only be viewed in portrait mode. Please rotate your device to view the rest of this page</p>
+      </div>
       <div id="content-outer">
-        <div class="hr hr-full hr-margin-top" style="opacity: 0"></div>
+        <div class="hr hr-full hr-margin-top"></div>
         <div id="content-left-outer-s">
           <div id="left-admins">
             <h1 class="box-h1">admins</h1>
@@ -57,12 +70,14 @@
           <div id="left-builder">
             <h1 class="box-h1">builders</h1>
           </div>
-          <div id="left-other">
+          <!-- <div id="left-other">
             <h1 class="box-h1">other</h1>
-          </div>
+          </div> -->
         </div>
         <div id="content-right-outer-s">
           <div id="right-background">
+            <div id="right-background-inner">
+            </div>
           </div>
           <div id="right-content">
             <div id="right-content-upper">

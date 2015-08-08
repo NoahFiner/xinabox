@@ -897,25 +897,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   font-weight: 900 !important;
   font-size: 3vw !important;
   text-align: left !important;
+  width: 100%;
 }
 
 #left-admins h1 {
   color: #FF5555;
+  background-color: rgba(255, 85, 85, 0.2)
 }
 #left-devs h1 {
   color: #FFFF55;
+  background-color: rgba(255, 255, 85, 0.2)
 }
 #left-mods h1 {
   color: #AA00AA;
+  background-color: rgba(170, 0, 170, 0.2);
 }
 #left-chatmods h1 {
   color: #FF55FF;
+  background-color: rgba(255, 85, 255, 0.2)
 }
 #left-builder h1 {
   color: #00AA00;
+  background-color: rgba(0, 170, 0, 0.2);
 }
 #left-other h1 {
-  color: #AAA;
+  color: #AAAAAA;
 }
 
 .player-prev {
@@ -940,6 +946,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.7);
+}
+
+.player-prev:hover p {
+  color: #4CB4C3 !important;
+  border-left: 20px solid #4CB4C3;
+  background-color: rgba(76, 180, 195, 0.2);
 }
 
 .player-prev:active {
@@ -972,6 +984,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   display: inline-block;
   line-height: 50px;
   vertical-align: top;
+  border-left: 0px solid #4CB4C3;
+  width: 69%;
+  background-color: transparent;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
 }
 
 #right-background {
@@ -980,7 +997,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   background-position: 50% 50%;
   height: 100%;
   width: 100%;
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
+  overflow-y: hidden;
   position: absolute;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+#right-background-inner {
+  background-image: url('aoeufhiuawhfihoaw.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
