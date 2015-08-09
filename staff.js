@@ -47,7 +47,7 @@ $(document).ready(function() {
 
   s3 = new Staff("Bacon_Waffles", "website developer/mod",
   '"By sitting on the couch all day you are statistically less likely to die than if you are social and move."',
-  "Bacon_Waffles started playing on Boxcraft back in its incredibly early days. He was an on and off player but eventually moved on to other things. But now Bacon_Waffles has been busy coding this beautiful website!");
+  "Bacon_Waffles started playing on Boxcraft back in its incredibly early days. He is an on and off player, but when on, is an excellent, friendly moderator. Additionally, he is the coder of this site!");
   staffers.push(s3);
 
   s4 = new Staff("Mr_Toast_", "moderator",
@@ -56,7 +56,7 @@ $(document).ready(function() {
   staffers.push(s4);
 
   s5 = new Staff("poopinabox", "chatmod",
-  '"poop is yummy"',
+  '"ure all made of potato"',
   "i got pooped out one day. yeah, i wasn't birthed, but pooped out.");
   staffers.push(s5);
 
@@ -91,6 +91,9 @@ $(document).ready(function() {
   staffers.push(s5);
 
   setStaffer = function(num) {
+    $("html, body").animate({
+      scrollTop: 440
+    }, 500);
     var player = staffers[num];
     $(".player-prev").removeClass('selected');
     $("#"+player.ign).addClass('selected');
@@ -119,5 +122,8 @@ $(document).ready(function() {
     var id = $(this).attr("id");
     setStaffer(getStaffer(id));
   })
+
+  category = (location.hash).replace('#','');
+  setStaffer(parseInt(category)); //call function
 
 });

@@ -226,9 +226,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   font-size: 30px;
 }
 
-.testimony-img {
+.testimony-img, #xinabox-head {
   width: 50%;
+  cursor: pointer;
   margin-left: 25%;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-transition: all 250ms cubic-bezier(0.385, 0.010, 0.100, 1); /* older webkit */
+-webkit-transition: all 250ms cubic-bezier(0.385, 0.010, 0.100, 1.530);
+   -moz-transition: all 250ms cubic-bezier(0.385, 0.010, 0.100, 1.530);
+     -o-transition: all 250ms cubic-bezier(0.385, 0.010, 0.100, 1.530);
+        transition: all 250ms cubic-bezier(0.385, 0.010, 0.100, 1.530); /* custom */
+}
+
+.testimony-img:hover, #xinabox-head:hover {
+  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
 }
 
 .testimony-img-p {
@@ -341,6 +354,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 .important {
   font-weight: 900;
   color: #85CBD6;
+}
+
+.rules-link {
+  color: #C2E5EB;
+  cursor: pointer;
+  text-decoration: underline;
+  border-left: 0px solid #47B1C2;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+}
+
+.rules-link:hover {
+  color: #47B1C2;
+  border-left: 10px solid #47B1C2;
 }
 
 #content-outer h1 {
@@ -629,7 +656,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   -webkit-transition: all 1s;
 }
 
-#gallery-bottom-img {
+#gallery-bottom-img, #gallery-bottom-buttons {
   width: 95%;
   background-image: url('photos/gallery/1.png');
   background-size: contain;
@@ -639,11 +666,49 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   -webkit-transition: all 0.5s;
 }
 
+#gallery-bottom-buttons {
+  background-image: url('');
+  background-color: transparent;
+  position: relative;
+}
+
 #gallery-bottom-mask {
   height: 498px !important;
   width: 95% !important;
   opacity: 0.5;
   background-color: #000;
+}
+
+.gallery-arr {
+  height: 5vw;
+  bottom: 5vh;
+  width: auto;
+  opacity: 0.5;
+  border-left: 0px solid #4CB4C3;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+}
+
+.gallery-arr:hover {
+  opacity: 1;
+  border-left: 5px solid #4CB4C3;
+}
+
+.gallery-arr:active {
+  border-left: 15px solid #4CB4C3;
+}
+
+#gallery-arr-left {
+  left: 0vw;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+}
+
+#gallery-arr-right {
+  right: 0vw;
 }
 
 
