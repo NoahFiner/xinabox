@@ -41,7 +41,7 @@ $(document).ready(function() {
   staffers.push(s1);
 
   s2 = new Staff("Coords", "admin",
-  '"Coords Lite"',
+  '"If A Book Store Never Runs Out Of A Certain Book, Dose That Mean That Nobody Reads It, Or Everybody Reads It"',
   "i once was looking at a map and i thought it was really boring until i discovered coordinates. now i have a coordinate fetish");
   staffers.push(s2);
 
