@@ -51,8 +51,8 @@ $(document).ready(function() {
   staffers.push(s3);
 
   s4 = new Staff("Mr_Toast_", "moderator",
-  '"ill toast your mom"',
-  "when i was born a toaster fell on my head. i then have been attempting to surgically make myself a piece of toast. i think it's working");
+  '"toast is like life"',
+  "I was once a child, but then I was bathed in butter and became toast.");
   staffers.push(s4);
 
   s5 = new Staff("poopinabox", "chatmod",
