@@ -42,7 +42,7 @@ $(document).ready(function() {
 
   s2 = new Staff("Coords", "admin",
   '"If A Book Store Never Runs Out Of A Certain Book, Dose That Mean That Nobody Reads It, Or Everybody Reads It"',
-  "i once was looking at a map and i thought it was really boring until i discovered coordinates. now i have a coordinate fetish");
+  "[6:38:46 PM] xinabox: do u have a legit bio for the site<br>[6:38:51 PM] Coords: no");
   staffers.push(s2);
 
   s3 = new Staff("Bacon_Waffles", "website developer/mod",
