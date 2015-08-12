@@ -624,7 +624,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   margin: 0;
   bottom: 0;
   width: 100%;
-  height: 0%;
+  height: 100%;
+  opacity: 0;
   cursor: pointer;
   background-color: #4CB4C3;
   transition: all 0.25s;
@@ -636,11 +637,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 }
 
 .gal-prev:hover .gal-prev-overlay, .gal-prev.selected .gal-prev-overlay {
-  height: 20%;
+  opacity: 0.25;
 }
 
 .gal-prev:active .gal-prev-overlay {
-  height: 100%;
+  opacity: 0.5;
   background-color: #FFF;
 }
 
