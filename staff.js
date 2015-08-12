@@ -41,13 +41,14 @@ $(document).ready(function() {
   staffers.push(s1);
 
   s2 = new Staff("Coords", "admin",
-  '"If A Book Store Never Runs Out Of A Certain Book, Dose That Mean That Nobody Reads It, Or Everybody Reads It"',
-  "[6:38:46 PM] xinabox: do u have a legit bio for the site<br>[6:38:51 PM] Coords: no");
+  '"12"',
+  "Spencer Howells Nelson (born July 11, 1980) is an American-Born PvP champion.");
+  // "[6:38:46 PM] xinabox: do u have a legit bio for the site<br>[6:38:51 PM] Coords: no");
   staffers.push(s2);
 
   s3 = new Staff("Bacon_Waffles", "website developer/mod",
   '"By sitting on the couch all day you are statistically less likely to die than if you are social and move."',
-  "Bacon_Waffles started playing on Boxcraft back in its incredibly early days. He is an on and off player, but when on, is an excellent, friendly moderator. Additionally, he is the coder of this site!");
+  "Starting in the earlier days of the server, Bacon_Waffles has contributed to the server in many different ways, with the most recent contribution of this website.");
   staffers.push(s3);
 
   s4 = new Staff("Mr_Toast_", "moderator",
@@ -66,17 +67,17 @@ $(document).ready(function() {
   staffers.push(s5);
 
   s5 = new Staff("KillerCondor", "builder",
-  '"practice safe sex - always use a condor"',
+  '"condors are my favorite bird"',
   "one day i was bird watching when there was this condor and i fell in love with it");
   staffers.push(s5);
 
   s5 = new Staff("KillinSpree", "builder",
   '"murdering people is my favorite past time, right behind cradling kittens"',
-  "i kill people in many different painful ways");
+  "once upon a time i learned about this cool animal called Krill. I tried to name myself after them but failed. :(");
   staffers.push(s5);
 
   s5 = new Staff("skymarzmine", "builder",
-  '"the sky must be blue because of blue waffles that fill it up"',
+  '"the sky must be blue because of me"',
   "one day i looked at the sky but i got blinded because of the sun so now i'm handicapped forever");
   staffers.push(s5);
 
@@ -87,7 +88,7 @@ $(document).ready(function() {
 
   s5 = new Staff("CO2_Donkey", "builder",
   '"everyone that consumes H20 dies ... eventually"',
-  "when i was young i had a pet donkey so i rode him all the time. one day when i was riding him he darted into a C02 tank. then i was inspired to murder the donkey and wear his raw, bloody skin around");
+  "when i was young i had a pet donkey so i rode him all the time. one day when i was riding him he darted into a C02 tank. then i was inspired to run away from my house so I could build for this minecraft server.");
   staffers.push(s5);
 
   setStaffer = function(num) {
