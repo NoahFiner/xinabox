@@ -42,7 +42,8 @@ $(document).ready(function() {
 
   s2 = new Staff("Coords", "admin",
   '"12"',
-  "Spencer Howells Nelson (born July 11, 1980) is an American-Born PvP champion.");
+  "Coords is an American Minecraft PvP professional best known for beating many of the top-elo players on Kohi and most competitive PvP servers on Minecraft. She is also a wonderful, friendly admin with a load of experience on the server.");
+  // "Spencer Howells Nelson (born July 11, 1980) is an American-Born PvP champion.");
   // "[6:38:46 PM] xinabox: do u have a legit bio for the site<br>[6:38:51 PM] Coords: no");
   staffers.push(s2);
 
